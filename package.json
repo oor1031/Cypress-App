@@ -1,0 +1,27 @@
+{
+  "name": "minimal-webpack-babel-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config ./webpack.config.js --mode development cypress",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "test:cypress": "cypress open --record --key=a802da8c-0f2c-4f4e-9cbf-ed2d77a10a35",
+    "cypress": "cypress run --record --key 079669d1-d0fa-432b-8518-c87260cfc70a",
+    "cyp": "cypress run --record --key=a802da8c-0f2c-4f4e-9cbf-ed2d77a10a35 --parallel",
+	"build": "webpack --mode production" 
+ },
+  "keywords": [],
+  "author": "Robin Wieruch <opensource@rwieruch.com> (https://www.robinwieruch.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "cypress": "^6.3.0",
+    "start-server-and-test": "^1.11.7",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

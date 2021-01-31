@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log(7),document.querySelector("#app").innerHTML="Hello from your JavaScript file ..."})();

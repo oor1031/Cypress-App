@@ -106,7 +106,7 @@ describe('App E2E', () => {
       cy.get('#Email').type('one one one two');
       cy.get('#next').click();
       cy.get('#Email').then($eemail => { 
-         $eemail.should('have.value', 'one one one two'); 
+         $eemail.should('have.value', 'one one one two');  
       })
       /* ==== End Cypress Studio ==== */
    });
